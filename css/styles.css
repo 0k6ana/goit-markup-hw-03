@@ -9,14 +9,18 @@ h2,
 h3,
 h4 {
   color: #2e2f42;
+  margin: 0;
 }
 
 p {
   font-size: 16px;
   color: #434455;
+  margin: 0;
 }
 ul {
   list-style-type: none;
+  padding: 0;
+  margin: 0;
 }
 a {
   text-decoration: none;
@@ -24,7 +28,21 @@ a {
 button {
   cursor: pointer;
 }
+
+.conteiner {
+  max-width: 1440px;
+  padding: 5px;
+  margin-left: auto;
+  margin-right: auto;
+}
 /*header*/
+.conteiner-header {
+}
+.navigation-list {
+  display: flex;
+  gap: 40px;
+}
+
 .navigation-menu {
   font-weight: 500;
   color: #2e2f42;
@@ -42,12 +60,13 @@ button {
   font-style: normal;
   letter-spacing: 0.02em;
 }
-.social:hover {
+.adress-list {
+}
+
+.social:hover .social:focus {
   color: #404bbf;
 }
-.social:focus {
-  color: #404bbf;
-}
+
 .social {
   color: #434455;
   font-size: 16px;
@@ -67,6 +86,9 @@ button {
   color: #2e2f42;
 }
 
+.navigation-list-item {
+}
+
 /*section1 hero*/
 .hero {
   background-color: #2e2f42;
@@ -79,6 +101,7 @@ button {
   text-align: center;
   letter-spacing: 0.02em;
   color: #ffffff;
+  padding: 188px 472px 292px 472px;
 }
 .hero-button {
   background-color: #4d5ae5;
@@ -87,10 +110,22 @@ button {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.04em;
+  padding: 16px 32px;
+  border-radius: 4%;
+  border: none;
+  margin: 0 auto;
+  display: flex;
 }
 .hero-button:hover,
 .hero-button:focus {
   background-color: #404bbf;
+}
+.information-list {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 24px;
+  padding: 120px 156px;
 }
 /*section2 information*/
 
@@ -124,6 +159,8 @@ button {
   text-align: center;
   letter-spacing: 0.02em;
   text-transform: capitalize;
+  padding: 120px;
+  padding-bottom: 72px;
 }
 .team-item {
   background-color: #ffffff;
@@ -148,6 +185,13 @@ button {
   text-align: center;
   text-transform: capitalize;
 }
+.team-list {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 24px;
+  padding-bottom: 120px;
+}
 
 /* section4 our portfolio*/
 
@@ -162,8 +206,19 @@ button {
 }
 .portfolio {
   background-color: #ffffff;
+  padding: 120px 156px;
 }
 
+.portfolio-item {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+}
+
+.image-portfolio-list {
+  padding-bottom: 24px 48px;
+}
 .portfolio-name {
   color: #2e2f42;
   font-weight: 500;
@@ -182,6 +237,7 @@ button {
 /*footer*/
 .footer {
   background-color: #2e2f42;
+  padding: 100px 1020px 100px 156px;
 }
 
 .header-logo {
@@ -192,6 +248,7 @@ button {
   letter-spacing: 0.03em;
   font-family: "Raleway", sans-serif;
   text-transform: uppercase;
+  padding-top: 100px;
 }
 .footer-logo-span {
   color: #f4f4fd;
@@ -201,4 +258,6 @@ button {
   line-height: 1.5;
   color: #f4f4fd;
   letter-spacing: 0.02em;
+  padding-bottom: 100px;
+  padding-top: 16px;
 }
