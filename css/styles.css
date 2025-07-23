@@ -25,18 +25,45 @@ ul {
 a {
   text-decoration: none;
 }
-button {
+/*button {
   cursor: pointer;
+}*/
+img {
+  display: block;
 }
 
-.conteiner {
+.conteiner-body {
   max-width: 1440px;
   padding: 5px;
   margin-left: auto;
   margin-right: auto;
 }
 /*header*/
+
+.navigation {
+  border-bottom: 1px solid #e7e9fc;
+}
 .conteiner-header {
+  display: flex;
+}
+.container {
+  width: 1158px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+.navigation-logo {
+  display: flex;
+  align-items: center;
+}
+.header-logo {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #4d5ae5;
+  font-family: "Raleway", sans-serif;
+  margin-right: 76px;
 }
 .navigation-list {
   display: flex;
@@ -49,6 +76,7 @@ button {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
+  padding: 24px 0;
 }
 .navigation-menu:hover {
   color: #404bbf;
@@ -61,9 +89,12 @@ button {
   letter-spacing: 0.02em;
 }
 .adress-list {
+  display: flex;
+  gap: 40px;
 }
 
-.social:hover .social:focus {
+.social:hover,
+.social:focus {
   color: #404bbf;
 }
 
@@ -73,25 +104,14 @@ button {
   line-height: 1.5;
 }
 
-.header-logo {
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 1.17;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
-  color: #4d5ae5;
-  font-family: "Raleway", sans-serif;
-}
 .header-logo-span {
   color: #2e2f42;
-}
-
-.navigation-list-item {
 }
 
 /*section1 hero*/
 .hero {
   background-color: #2e2f42;
+  padding: 188px 0;
 }
 .hero-title {
   font-weight: 700;
@@ -101,7 +121,6 @@ button {
   text-align: center;
   letter-spacing: 0.02em;
   color: #ffffff;
-  padding: 188px 472px 292px 472px;
 }
 .hero-button {
   background-color: #4d5ae5;
@@ -111,10 +130,13 @@ button {
   line-height: 1.5;
   letter-spacing: 0.04em;
   padding: 16px 32px;
-  border-radius: 4%;
+  border-radius: 4px;
   border: none;
   margin: 0 auto;
-  display: flex;
+  display: block;
+  min-width: 169px;
+  cursor: pointer;
+  height: 56px;
 }
 .hero-button:hover,
 .hero-button:focus {
@@ -128,9 +150,16 @@ button {
   padding: 120px 156px;
 }
 /*section2 information*/
+.section-information {
+  padding: 120px 0;
+}
 
 .title-information {
   visibility: hidden;
+}
+.information-list {
+  display: flex;
+  gap: 24px;
 }
 .subtitle-information {
   color: #2e2f42;
@@ -138,17 +167,20 @@ button {
   font-size: 20px;
   line-height: 1.2;
   letter-spacing: 0.02em;
+  margin-bottom: 8px;
 }
 .information-text {
   color: #434455;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
+  width: calc ((100% - 3 * 24px) / 4);
 }
 
 /*section3 our team*/
 .our-team {
   background-color: #f4f4fd;
+  padding: 120px 0;
 }
 
 .title-team {
@@ -160,18 +192,30 @@ button {
   letter-spacing: 0.02em;
   text-transform: capitalize;
   padding: 120px;
-  padding-bottom: 72px;
+  margin-bottom: 72px;
+}
+.team-list {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 24px;
+  padding-bottom: 120px;
 }
 .team-item {
   background-color: #ffffff;
+  width: calc((100% - 72px) / 4);
+  border-radius: 0px 0px 4px 4px;
 }
-
+.container-team {
+  padding: 32px 0;
+}
 .team-name {
   color: #2e2f42;
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
   text-align: center;
+  margin-bottom: 8px;
   letter-spacing: 0.02em;
   text-transform: capitalize;
   background-color: #ffffff;
@@ -184,17 +228,15 @@ button {
   letter-spacing: 0.02em;
   text-align: center;
   text-transform: capitalize;
-}
-.team-list {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  gap: 24px;
-  padding-bottom: 120px;
+  margin-bottom: 8px;
 }
 
 /* section4 our portfolio*/
-
+.portfolio {
+  background-color: #ffffff;
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
 .title-portfolio {
   color: #2e2f42;
   font-weight: 700;
@@ -203,22 +245,24 @@ button {
   text-align: center;
   letter-spacing: 0.02em;
   text-transform: capitalize;
+  padding-bottom: 72px;
 }
-.portfolio {
-  background-color: #ffffff;
-  padding: 120px 156px;
-}
-
 .portfolio-item {
-  width: 100%;
   display: flex;
   flex-wrap: wrap;
-  gap: 24px;
+  column-gap: 24px;
+  row-gap: 48px;
+}
+.image-portfolio-list {
+  width: calc((100% - 48px) / 3);
+}
+.portfolio-apps {
+  padding: 32px 16px;
+  border: 1px solid #e7e9fc;
+  border-top: none;
+  margin-bottom: 8px;
 }
 
-.image-portfolio-list {
-  padding-bottom: 24px 48px;
-}
 .portfolio-name {
   color: #2e2f42;
   font-weight: 500;
@@ -237,7 +281,7 @@ button {
 /*footer*/
 .footer {
   background-color: #2e2f42;
-  padding: 100px 1020px 100px 156px;
+  padding: 100px 0;
 }
 
 .header-logo {
@@ -249,6 +293,8 @@ button {
   font-family: "Raleway", sans-serif;
   text-transform: uppercase;
   padding-top: 100px;
+  display: inline-block;
+  margin-bottom: 16px;
 }
 .footer-logo-span {
   color: #f4f4fd;
@@ -260,4 +306,5 @@ button {
   letter-spacing: 0.02em;
   padding-bottom: 100px;
   padding-top: 16px;
+  max-width: 264px;
 }
