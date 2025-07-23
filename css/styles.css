@@ -279,7 +279,7 @@ img {
 }
 
 /*footer*/
-.footer {
+.conteiner-footer {
   background-color: #2e2f42;
   padding: 100px 0;
 }
@@ -292,7 +292,6 @@ img {
   letter-spacing: 0.03em;
   font-family: "Raleway", sans-serif;
   text-transform: uppercase;
-  padding-top: 100px;
   display: inline-block;
   margin-bottom: 16px;
 }
