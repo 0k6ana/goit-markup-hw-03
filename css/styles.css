@@ -64,7 +64,7 @@ img {
   display: flex;
   align-items: center;
 }
-.header-logo {
+.logo {
   font-weight: 700;
   font-size: 18px;
   line-height: 1.17;
@@ -72,9 +72,12 @@ img {
   text-transform: uppercase;
   color: #4d5ae5;
   font-family: "Raleway", sans-serif;
+}
+.header-logo {
   margin-right: 76px;
   padding: 24px 0;
 }
+
 .header-logo-span {
   color: #2e2f42;
 }
@@ -140,9 +143,9 @@ img {
   letter-spacing: 0.03em;
   letter-spacing: 0.02em;
   color: #ffffff;
-  justify-content: center;
+  margin: 0 auto;
+  display: block;
   margin-bottom: 48px;
-  margin-left: 300px;
 }
 .hero-container {
 }
@@ -174,8 +177,6 @@ img {
 
 .information-list {
   display: flex;
-  flex-direction: row;
-  justify-content: center;
   gap: 24px;
 }
 .information-list-item {
@@ -214,10 +215,7 @@ img {
 }
 .team-list {
   display: flex;
-  flex-direction: row;
-  justify-content: center;
   gap: 24px;
-  padding-bottom: 120px;
 }
 .team-item {
   background-color: #ffffff;
@@ -225,7 +223,6 @@ img {
   border-radius: 0px 0px 4px 4px;
 }
 .container-team {
-  padding: 32px 0;
 }
 .team-name {
   color: #2e2f42;
@@ -246,7 +243,6 @@ img {
   letter-spacing: 0.02em;
   text-align: center;
   text-transform: capitalize;
-  margin-bottom: 8px;
 }
 
 /* section4 our portfolio*/
@@ -302,14 +298,7 @@ img {
   padding: 100px 0;
 }
 
-.logo {
-  color: #4d5ae5;
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 1.17;
-  letter-spacing: 0.03em;
-  font-family: "Raleway", sans-serif;
-  text-transform: uppercase;
+.footer-logo {
   display: inline-block;
   margin-bottom: 16px;
 }
@@ -321,7 +310,5 @@ img {
   line-height: 1.5;
   color: #f4f4fd;
   letter-spacing: 0.02em;
-  padding-bottom: 100px;
-  padding-top: 16px;
   max-width: 264px;
 }
