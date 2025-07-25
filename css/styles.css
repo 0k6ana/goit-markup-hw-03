@@ -7,7 +7,9 @@ body {
 h1,
 h2,
 h3,
-h4 {
+h4,
+h5,
+h6 {
   color: #2e2f42;
   margin: 0;
 }
@@ -43,20 +45,21 @@ img {
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
-
-/*header*/
-
-.navigation {
-  border-bottom: 1px solid #e7e9fc;
-}
-.conteiner-header {
-  display: flex;
-}
 .container {
   width: 1158px;
   margin: 0 auto;
   padding: 0 15px;
 }
+/*header*/
+
+.navigation {
+  border-bottom: 1px solid #e7e9fc;
+}
+.container-header {
+  display: flex;
+  align-items: center;
+}
+
 .navigation-logo {
   display: flex;
   align-items: center;
@@ -70,8 +73,7 @@ img {
   color: #4d5ae5;
   font-family: "Raleway", sans-serif;
   margin-right: 76px;
-  padding-top: 25.5px;
-  padding-bottom: 25.5px;
+  padding: 24px 0;
 }
 .header-logo-span {
   color: #2e2f42;
@@ -79,12 +81,10 @@ img {
 
 .navigation-list {
   display: flex;
+  align-items: center;
   gap: 40px;
-  padding-top: 24px;
-  padding-bottom: 24px;
 }
 .navigation-list-item {
-  padding-bottom: 24px;
 }
 
 .navigation-menu {
@@ -94,6 +94,7 @@ img {
   line-height: 1.5;
   letter-spacing: 0.02em;
   padding: 24px 0;
+  display: block;
 }
 .navigation-menu:hover {
   color: #404bbf;
@@ -104,12 +105,13 @@ img {
 .adress-menu {
   font-style: normal;
   letter-spacing: 0.02em;
+  margin-left: auto;
 }
 .adress-list {
   display: flex;
   gap: 40px;
-  margin-left: 332px;
-  padding: 25px 0;
+  padding: 24px 0;
+  align-items: center;
 }
 .adress-list-item {
 }
@@ -300,7 +302,7 @@ img {
   padding: 100px 0;
 }
 
-.header-logo {
+.logo {
   color: #4d5ae5;
   font-weight: 700;
   font-size: 18px;
